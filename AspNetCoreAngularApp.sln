@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAngularApp", "AspNetCoreAngularApp.csproj", "{FA95694E-0ADD-42CD-BCC5-1D05CC9EA9F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreAngularApp.Tests", "AspNetCoreAngularApp.Tests\AspNetCoreAngularApp.Tests.csproj", "{9A1D547F-C641-4402-AD87-3211BCC7BEAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA95694E-0ADD-42CD-BCC5-1D05CC9EA9F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA95694E-0ADD-42CD-BCC5-1D05CC9EA9F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA95694E-0ADD-42CD-BCC5-1D05CC9EA9F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA95694E-0ADD-42CD-BCC5-1D05CC9EA9F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1D547F-C641-4402-AD87-3211BCC7BEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1D547F-C641-4402-AD87-3211BCC7BEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1D547F-C641-4402-AD87-3211BCC7BEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1D547F-C641-4402-AD87-3211BCC7BEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C6C9AC1-4FD8-4454-8227-A7D21AE701DC}
+	EndGlobalSection
+EndGlobal

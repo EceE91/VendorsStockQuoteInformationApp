@@ -1,0 +1,25 @@
+<h1 id="tableLabel">Hotel Details</h1>
+
+<p *ngIf="!hotels"><em>Loading...</em></p>
+
+<input type="button" value="Add Hotel" class="btn-primary" id="btnAddHotel" onclick="" /><br /><br />
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="hotels">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Location</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let hotel of hotels">
+      <td>{{ hotel.id }}</td>
+      <td>{{ hotel.name }}</td>
+      <td>{{ hotel.description }}</td>
+      <td>{{ hotel.location }}</td>
+      <td>{{ hotel.rating }}</td>
+    </tr>
+  </tbody>
+</table>

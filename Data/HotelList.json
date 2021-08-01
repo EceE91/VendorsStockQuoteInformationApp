@@ -1,0 +1,142 @@
+[
+  {
+    "Id": 1,
+    "Name": "hotel1",
+    "Description": "hotel1 des",
+    "Location": "hotel1 des",
+    "Rating": 1
+  },
+  {
+    "Id": 2,
+    "Name": "hotel2",
+    "Description": "hotel2 des",
+    "Location": "hotel2 location",
+    "Rating": 1
+  },
+  {
+    "Id": 3,
+    "Name": "hotel3",
+    "Description": "hotel3 des",
+    "Location": "hotel3 location",
+    "Rating": 2
+  },
+  {
+    "Id": 4,
+    "Name": "hotel4",
+    "Description": "hotel4 des",
+    "Location": "hotel4 location",
+    "Rating": 4
+  },
+  {
+    "Id": 5,
+    "Name": "hotel5",
+    "Description": "hotel5 des",
+    "Location": "hotel5 location",
+    "Rating": 3
+  },
+  {
+    "Id": 6,
+    "Name": "hotel6",
+    "Description": "hotel6 des",
+    "Location": "hotel6 location",
+    "Rating": 3
+  },
+  {
+    "Id": 7,
+    "Name": "hotel7",
+    "Description": "hotel7 des",
+    "Location": "hotel7 location",
+    "Rating": 5
+  },
+  {
+    "Id": 8,
+    "Name": "hotel8",
+    "Description": "hotel8 des",
+    "Location": "hotel8 location",
+    "Rating": 5
+  },
+  {
+    "Id": 9,
+    "Name": "hotel9",
+    "Description": "hotel9 des",
+    "Location": "hotel9 location",
+    "Rating": 3
+  },
+  {
+    "Id": 10,
+    "Name": "hotel10",
+    "Description": "hotel10 des",
+    "Location": "hotel10 location",
+    "Rating": 2
+  },
+  {
+    "Id": 11,
+    "Name": "hotel11",
+    "Description": "hotel11 des",
+    "Location": "hotel11 location",
+    "Rating": 4
+  },
+  {
+    "Id": 12,
+    "Name": "hotel12",
+    "Description": "hotel12 des",
+    "Location": "hotel12 location",
+    "Rating": 4
+  },
+  {
+    "Id": 13,
+    "Name": "hotel13",
+    "Description": "hotel13 des",
+    "Location": "hotel13 location",
+    "Rating": 5
+  },
+  {
+    "Id": 14,
+    "Name": "hotel14",
+    "Description": "hotel14 des",
+    "Location": "hotel14 location",
+    "Rating": 3
+  },
+  {
+    "Id": 15,
+    "Name": "hotel15",
+    "Description": "hotel15 des",
+    "Location": "hotel15 location",
+    "Rating": 2
+  },
+  {
+    "Id": 16,
+    "Name": "hotel16",
+    "Description": "hotel16 des",
+    "Location": "hotel16 location",
+    "Rating": 1
+  },
+  {
+    "Id": 17,
+    "Name": "hotel17",
+    "Description": "hotel17 des",
+    "Location": "hotel17 location",
+    "Rating": 5
+  },
+  {
+    "Id": 18,
+    "Name": "hotel18",
+    "Description": "hotel18 des",
+    "Location": "hotel18 location",
+    "Rating": 3
+  },
+  {
+    "Id": 19,
+    "Name": "hotel19",
+    "Description": "hotel19 des",
+    "Location": "hotel19 location",
+    "Rating": 2
+  },
+  {
+    "Id": 20,
+    "Name": "hotel20",
+    "Description": "hotel20 des",
+    "Location": "hotel20 location",
+    "Rating": 5
+  }
+]
