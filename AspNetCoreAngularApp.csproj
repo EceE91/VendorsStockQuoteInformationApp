@@ -5,14 +5,16 @@
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
     <IsPackable>false</IsPackable>
-    <SpaRoot>ClientApp\</SpaRoot>
+    <SpaRoot>AspNetCoreAngularApp.UI\ClientApp\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <RootNamespace>AspNetCoreAngularApp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
@@ -21,16 +23,31 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="5.0.1" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Npm" Version="3.5.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
+    <Content Include="AspNetCoreAngularApp.UI\wwwroot\favicon.ico" />
     <None Remove="$(SpaRoot)**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
     <None Remove="AspNetCoreAngularApp.Tests\**" />
     <Content Remove="AspNetCoreAngularApp.Tests\**" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\angular.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\e2e\tsconfig.e2e.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\package-lock.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\package.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\src\tsconfig.app.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\src\tsconfig.server.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\src\tsconfig.spec.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\src\tslint.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\tsconfig.json" />
+    <None Include="AspNetCoreAngularApp.UI\ClientApp\tslint.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +68,19 @@
     <_ContentIncludedByDefault Remove="AspNetCoreAngularApp.Tests\obj\project.assets.json" />
     <_ContentIncludedByDefault Remove="AspNetCoreAngularApp.Tests\TestData.json" />
     <_ContentIncludedByDefault Remove="AspNetCoreAngularApp.Tests\obj\project.packagespec.json" />
+    <_ContentIncludedByDefault Remove="Pages\Error.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\favicon.ico" />
+    <_ContentIncludedByDefault Remove="ClientApp\angular.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\e2e\tsconfig.e2e.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\package-lock.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\package.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\tsconfig.app.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\tsconfig.server.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\tsconfig.spec.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\tslint.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\tsconfig.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\tslint.json" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

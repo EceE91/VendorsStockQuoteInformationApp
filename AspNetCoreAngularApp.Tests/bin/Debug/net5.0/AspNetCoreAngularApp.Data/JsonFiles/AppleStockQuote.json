@@ -1,0 +1,16 @@
+{
+  "Name":"Apple Inc",
+  "Symbol":"APPL",
+  "LastPrice":524.49,
+  "Change":15.6,
+  "ChangePercent":3.06549549018453,
+  "Timestamp":"Wed Oct 23 13:39:19 UTC-06:00 2013",
+  "MSDate": 41570.568969907,
+  "MarketCap":476497591530,
+  "Volume":397562,
+  "ChangeYTD":532.1729,
+  "ChangePercentYTD":-1.44368493773359,
+  "High":52499,
+  "Low":519.175,
+  "Open":519.175
+}

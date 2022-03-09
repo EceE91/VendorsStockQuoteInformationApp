@@ -1,0 +1,49 @@
+<!-- dialog-box.component.html -->
+<h1 mat-dialog-title><strong>Stock Quote</strong></h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input placeholder="Name" matInput [(ngModel)]="local_data.name">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Symbol" matInput [(ngModel)]="local_data.symbol">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="LastPrice" matInput [(ngModel)]="local_data.lastPrice">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Change" matInput [(ngModel)]="local_data.change">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="ChangePercent" matInput [(ngModel)]="local_data.changePercent">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Timestamp" matInput [(ngModel)]="local_data.timestamp">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="MsDate" matInput [(ngModel)]="local_data.msDate">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Marketcap" matInput [(ngModel)]="local_data.marketCap">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Volume" matInput [(ngModel)]="local_data.volume">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="ChangeYTD" matInput [(ngModel)]="local_data.changeYTD">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="ChangePercentYTD" matInput [(ngModel)]="local_data.changePercentYTD">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="High" matInput [(ngModel)]="local_data.high">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Low" matInput [(ngModel)]="local_data.low">
+  </mat-form-field>
+  <mat-form-field>
+    <input placeholder="Open" matInput [(ngModel)]="local_data.open">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>
