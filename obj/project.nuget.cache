@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1uTtxU9W6E+5g/cy0h7Eq5V2Yh+oxrL22hB8d6orE8fCuZkqplpB4GLHH4NVW8UMynywcCKhqqr7MgdwWWMOYA==",
+  "dgSpecHash": "UZJYlnjr2uCpfRlvOnO+cIbh70tGjUKg/AxdXzQSgsQw3VOO99YaLiHz8txAU3fn1Fs2kzKfk8cj8dUyQNA4Nw==",
   "success": true,
   "projectFilePath": "/Users/ece.ercan/Desktop/NN/AngularAspNetCoreApp/AspNetCoreAngularApp.csproj",
   "expectedPackageFiles": [
@@ -190,7 +190,7 @@
     "/Users/ece.ercan/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/ece.ercan/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/Users/ece.ercan/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "/Users/ece.ercan/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+    "/Users/ece.ercan/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.23/microsoft.netcore.app.host.osx-x64.3.1.23.nupkg.sha512"
   ],
   "logs": []
 }

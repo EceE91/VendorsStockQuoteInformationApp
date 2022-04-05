@@ -22,12 +22,12 @@ namespace AspNetCoreAngularApp.AspNetCoreAngularApp.Api.Controllers
         }
 
         [HttpGet("{vendorSymbol}")]
-        public async Task<ActionResult<StockQuoteViewModel>> GetStockQuote(string vendorSymbol)
+        public ActionResult<StockQuoteViewModel> GetStockQuote(string vendorSymbol)
         {
             try
             {
                 var stockQuote = _vendorFactory.GetStockQuoteService(vendorSymbol).FetchStockQuoteInformation();
-                return await Task.FromResult<ActionResult<StockQuoteViewModel>>(_mapper.Map<StockQuote, StockQuoteViewModel>(stockQuote));
+                return _mapper.Map<StockQuote, StockQuoteViewModel>(stockQuote);
             }
             catch (Exception e)
             {

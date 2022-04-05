@@ -27,8 +27,8 @@ namespace AspNetCoreAngularApp.AspNetCoreAngularApp.Api.Controllers
         {
             try
             {
-                var vendors = _vendorRepository.GetAllAsync().Result;
-                return await Task.FromResult(new ActionResult<IEnumerable<VendorViewModel>>(_mapper.Map<IEnumerable<Vendor>, IEnumerable<VendorViewModel>>(vendors)));
+                var vendors = await _vendorRepository.GetAllAsync();
+                return new ActionResult<IEnumerable<VendorViewModel>>(_mapper.Map<IEnumerable<Vendor>, IEnumerable<VendorViewModel>>(vendors));
             }
             catch (Exception e)
             {

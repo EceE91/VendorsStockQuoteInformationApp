@@ -1,6 +1,7 @@
 using System;
 using AspNetCoreAngularApp.AspNetCoreAngularApp.Core.Interfaces;
 using AspNetCoreAngularApp.AspNetCoreAngularApp.Data.StockQuoteServices;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace AspNetCoreAngularApp.AspNetCoreAngularApp.Extensions
 {
@@ -10,14 +11,14 @@ namespace AspNetCoreAngularApp.AspNetCoreAngularApp.Extensions
 
         public VendorFactory(IServiceProvider serviceProvider)
         {
-            this._serviceProvider = serviceProvider;
+            _serviceProvider = serviceProvider;
         }
     
         public IStockQuoteService GetStockQuoteService(string vendorSymbol)
         {
             if(vendorSymbol == "NFLX")
-                return (IStockQuoteService)_serviceProvider.GetService(typeof(NetflixStockQuoteService));
-            return (IStockQuoteService)_serviceProvider.GetService(typeof(AppleStockQuoteService));
+                return (IStockQuoteService)_serviceProvider.GetRequiredService(typeof(NetflixStockQuoteService));
+            return (IStockQuoteService)_serviceProvider.GetRequiredService(typeof(AppleStockQuoteService));
         }
     }
 }

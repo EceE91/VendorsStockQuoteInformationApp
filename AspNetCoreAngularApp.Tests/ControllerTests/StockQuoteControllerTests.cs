@@ -18,7 +18,7 @@ namespace AspNetCoreAngularApp.Tests.ControllerTests
     public class StockQuoteControllerTests
     {
         [Fact]
-        public async void GetStockQuote_ReturnsStockQuoteOfSelectedVendor()
+        public void GetStockQuote_ReturnsStockQuoteOfSelectedVendor()
         {
             // Arrange
             var netflixSymbol = "NFLX";
@@ -58,14 +58,14 @@ namespace AspNetCoreAngularApp.Tests.ControllerTests
             var controller = new StockQuoteController(mockMapper.Object, factory);
 
             // Act
-            var result = await controller.GetStockQuote(netflixSymbol);
+            var result = controller.GetStockQuote(netflixSymbol);
             
             // assert
             result.Value.Should().BeEquivalentTo(viewModel);
         }
 
         [Fact]
-        public async void GetStockQuote_WhenJsonSerializationExceptionThrown_ReturnsBadRequest()
+        public void GetStockQuote_WhenJsonSerializationExceptionThrown_ReturnsBadRequest()
         {
             // Arrange
             var appleSymbol = "APPL";
@@ -88,14 +88,14 @@ namespace AspNetCoreAngularApp.Tests.ControllerTests
             var controller = new StockQuoteController(mockMapper.Object, factory);
 
             // Act
-            var result = await controller.GetStockQuote(appleSymbol);
+            var result = controller.GetStockQuote(appleSymbol);
             
             // assert
             Assert.IsType<BadRequestObjectResult>(result.Result);
         }
         
         [Fact]
-        public async void GetStockQuote_WhenFileNotFoundExceptionThrown_ReturnsBadRequest()
+        public void GetStockQuote_WhenFileNotFoundExceptionThrown_ReturnsBadRequest()
         {
             // Arrange
             var appleSymbol = "APPL";
@@ -118,7 +118,7 @@ namespace AspNetCoreAngularApp.Tests.ControllerTests
             var controller = new StockQuoteController(mockMapper.Object, factory);
 
             // Act
-            var result = await controller.GetStockQuote(appleSymbol);
+            var result = controller.GetStockQuote(appleSymbol);
             
             // assert
             Assert.IsType<BadRequestObjectResult>(result.Result);

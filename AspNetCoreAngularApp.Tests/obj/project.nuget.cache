@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zFZ/dVsTl2rY0DivIUxZMnXYD1+Kq/2YZQ/l2xD/s9wne1KXLcNhsy3XU7MYGiMfnm+WhN/jwRxumz8/wTp6GQ==",
+  "dgSpecHash": "vGmoO1UYfMO47a4sx4EkmYaCbFFIflKc1TpU4NXPDHX/dUf0+9DRX2yVt8NGpnQ5bjlfK5wbkkCEpbLyozdS/g==",
   "success": true,
   "projectFilePath": "/Users/ece.ercan/Desktop/NN/AngularAspNetCoreApp/AspNetCoreAngularApp.Tests/AspNetCoreAngularApp.Tests.csproj",
   "expectedPackageFiles": [
